@@ -1,0 +1,50 @@
+﻿CS50 – AL with python
+
+Chap0 – Search
+
+Examples:
+    • 15-puzzle problem
+    • maze – initial to final stage
+    • driving directions on a map
+
+Terminology:
+  agent
+  state
+  initial state*
+  actions(set of states)*
+  transition model*
+  result(current state, action)
+  state space
+  goal test*
+  path cost function*
+
+Data Structure:
+  Node
+  - current state
+  - parent node
+  - action
+  - path cost
+
+Approach:
+1. start frontier(queue/stack) with initial state
+2. Repeat
+    • if frontier empty, then no solution
+    • remove node from frontier
+    • if node == goal, solution found
+    • else expand node, and add resulting nodes to frontier
+
+eg: find path from A -> E
+
+Revised Approach:
+1. start frontier(queue/stack) with initial state
+2. start explored(set)
+3. Repeat
+    • if frontier empty, then no solution
+    • remove node from frontier
+    • if node == goal, solution found
+    • else expand node, and add resulting nodes to frontier if not in explored and frontier
+
+Algorithms:
+1. Depth First Search – stack
+2. Breadth First Search – queue
+(explain using maze problem)
