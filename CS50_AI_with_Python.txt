@@ -48,3 +48,6 @@ Algorithms:
 1. Depth First Search – stack
 2. Breadth First Search – queue
 (explain using maze problem)
+
+Uninformed - BFS, DFS
+Informed -
